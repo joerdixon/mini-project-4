@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <!-- HEADER W/ START BUTTON -->
+    <header>
+        <h1>Hangman</h1>
+        <button id='start'>Start</button>
+    </header>
+    <div class="gamespace">
+        <!-- WORD DISPLAY -->
+        <div class="word-display">
+            <div id="actualword">
+            </div>
+        </div>
+        <!-- STATS DISPLAY -->
+        <div class="stats-display">
+            <div class="winloss">
+                <div id='record'>
+                    <p id='wincount'>Wins: </p>
+                    <p id="losscount">Losses: </p>
+                </div>
+                <div class="reset">
+                    <button id="reset-button">RESET</button>
+                </div>
+            </div>
+            <div class="timer">
+                <p class="seconds"></p>
+                <p>seconds remaining</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
