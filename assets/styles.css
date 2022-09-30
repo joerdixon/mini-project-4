@@ -48,9 +48,12 @@ header h1 {
 }
 
 #actualword {
-    width: 60%;
+    width: 65%;
     height: 30%;
     background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* STATS DISPLAY (RIGHT SIDE) */
