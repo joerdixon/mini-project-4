@@ -49,6 +49,7 @@ function startGame(event) {
 }
 
 
+
 // WHEN THE PLAYER PRESSES A KEY
 function playerGuess(event) {
     // FOR THE LENGTH OF THE CONTROL ARRAY
@@ -61,10 +62,10 @@ function playerGuess(event) {
             renderCurrentWord();
         }
     }
-    // WIN CONDITION
-    if (!sbpArray.includes("_")) {
-        win();
-    }
+            // WIN CONDITION
+            if (!sbpArray.includes("_")) {
+                win();
+            }
 } 
 
 // WHEN WE NEED TO UPDATE/INITIALIZE THE SCREEN
@@ -85,8 +86,6 @@ function renderCurrentWord() {
         wordDisplay.appendChild(underScore)
     }
     }
-
-
 }
 
 // WHEN THE PLAYER WINS
@@ -95,6 +94,7 @@ function win() {
     wins++;
     storeStats();
     renderCurrentWord();
+    sbpArray = ["_"]
 }
 
 function loss() {
@@ -165,3 +165,8 @@ if (keystoke is within the controlArray)
        win screen
        wins++
 */
+
+
+// TODO: ADD TIMER AND LOSS CONDITION
+
+// TODO: WHILE (gameEnd) {infinite loop until game start. keeps things from updating.}
