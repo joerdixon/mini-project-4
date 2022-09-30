@@ -29,8 +29,8 @@ function startGame(event) {
     for (var i = 0; i < randWord.length; i++) {
         var underScore = document.createElement("p");
         underScore.textContent = "_";
-        underScore.setAttribute("data-index", i);
-        console.log(underScore.getAttribute("data-index"));
+        underScore.setAttribute("id", "box" + i);
+        // console.log(underScore.getAttribute("data-index"));
         underScore.setAttribute("style", "font-size: 2rem; display: inline; margin: 10px; text-align: center;")
         wordDisplay.appendChild(underScore)
     }
@@ -44,7 +44,8 @@ function playerGuess(event) {
 
     for (var i = 0; i < randWord.length; i++) {
         if (event.key == randWord[i]) {
-            var index = wordDisplay.querySelectorgetAttribute("data-index");
+            var index = wordDisplay.getAttribute("data-index");
+            wordDisplay.innerHTML = event.key;
         }
     }
 
